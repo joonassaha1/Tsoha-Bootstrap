@@ -1,9 +1,15 @@
 Aihe: Bitcoinin kurssikehitys
-Kirjautumisen takana oleva tietokanta, johon voi syöttää Bitcoinin kurssin halutuilta päiviltä.
+Kirjautumisen takana oleva web-sovellus, johon voi syöttää Bitcoinin kurssin halutuilta päiviltä.
 Mahdollisesti kurssit voi lukea myös apin läpi, mikäli tämän toteuttamiseen löytyy järkevä tapa.
 Palvelu sisältää haun, jonka avulla voi hakea viimeismmän kurssin tai tietyn päivän kurssin.
+Sovellus toteutetaan PHP:llä ja tietokanta PostgreSQL:llä. Ympäristönä toimi laitoksen users-palvelin.
+
 Use cases:
+
+Ylläpitäjä
+- Lisää uuden valuaation
+
+Käyttäjä
 - Käyttäjä tarkistaa viimeisimmän kurssin
-- Käyttäjä lisää uuden valuaation
 - Käyttäjä tarkistaa tietyn päivämäärän kurssin
 
