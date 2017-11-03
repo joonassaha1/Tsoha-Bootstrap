@@ -1,3 +1,9 @@
 Aihe: Bitcoinin kurssikehitys
-Tietokanta, johon voi syöttää Bitcoinin kurssi
+Kirjautumisen takana oleva tietokanta, johon voi syöttää Bitcoinin kurssin halutuilta päiviltä.
+Mahdollisesti kurssit voi lukea myös apin läpi, mikäli tämän toteuttamiseen löytyy järkevä tapa.
+Palvelu sisältää haun, jonka avulla voi hakea viimeismmän kurssin tai tietyn päivän kurssin.
+Use cases:
+- Käyttäjä tarkistaa viimeisimmän kurssin
+- Käyttäjä lisää uuden valuaation
+- Käyttäjä tarkistaa tietyn päivämäärän kurssin
 
