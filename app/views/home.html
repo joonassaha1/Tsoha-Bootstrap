@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="page-header">
-    <h1>Tervetuloa Tsoha Bootstrappiin!</h1>
-  </div>
-
-  <p>
-    <a href="http://tsoha.github.io" class="btn btn-primary btn-lg">Tutustu materiaaliin <span class="glyphicon glyphicon-chevron-right"></span></a>
-  </p>
+<div class="page-header">
+    <h1>eMeals</h1>
+    <p>Tervetuloa eMeals -ateriatietokantaan. eMeals sisältää ruokareseptit aterioittain ja raaka-aineittain.</p>
+</div>
+<p>
+    <a href="{{base_path}}/list" class="btn btn-primary btn-lg">Selaa aterioita<span class="glyphicon glyphicon-chevron-right"></span></a>
+</p>
+<p>
+    <a href="{{base_path}}/login" class="btn btn-primary btn-lg">Kirjaudu<span class="glyphicon glyphicon-chevron-right"></span></a>
+</p>
+<p>
+    <a href="https://github.com/joonassaha1/Tsoha-Bootstrap/">Projekti Githubissa</a>
+</p>
 {% endblock %}
