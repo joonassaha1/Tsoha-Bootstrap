@@ -9,7 +9,7 @@ CREATE TABLE Chef(
 CREATE TABLE Foodstuff(
     id SERIAL PRIMARY KEY,
     name varchar(50) NOT NULL,
-    description varchar(500),
+    description varchar(500)
 );
 
 CREATE TABLE Recipe(
