@@ -11,5 +11,5 @@ Yleisiä linkkejä:
 
 ## Työn aihe
 
-Bitcoinin kurssikehitys -tietokanta
+Reseptikirja
 

@@ -7,4 +7,9 @@ class ChefController extends BaseController {
         View::make('chefs/chefindex.html', array('chefs' => $chefs));
     }
 
+    public static function oneChef() {
+        //$chefs = Chef::all();
+        View::make('chefs/chef.html');
+    }
+
 }

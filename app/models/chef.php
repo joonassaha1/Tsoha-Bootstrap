@@ -34,9 +34,12 @@ class Chef extends BaseModel {
                 'id' => $row['id'],
                 'nick' => $row['nick'],
             ));
+            
+            return $chef;
         }
+        
+        return null;
 
-        return $chef;
     }
 
 }

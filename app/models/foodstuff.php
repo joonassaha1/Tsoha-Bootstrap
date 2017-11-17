@@ -37,9 +37,12 @@ class Foodstuff extends BaseModel {
                 'nick' => $row['nick'],
                 'description' => $row['description']
             ));
+            
+            return $foodstuff;
         }
+        
+        return null;
 
-        return $foodstuff;
     }
 
 }

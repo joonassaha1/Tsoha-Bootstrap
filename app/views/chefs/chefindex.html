@@ -12,10 +12,8 @@
     <tbody>
         {% for chef in chefs %}
         <tr>
-            <td><a href="#">{{chef.name}}</a></td>
-            <td></td>
-            <td><label class="label label-danger">ei hyvää</label></td>
-            <th><a class="btn btn-default btn-sm" href="{{base_path}}/item/{{foodstuff.id}}/edit">Muokkaa</a></th>
+            <td><a href="#">{{chef.nick}}</a></td>
+            <td><a href="#">{{chef.id}}</a></td>
         </tr>
         {% endfor %}
     </tbody>

@@ -35,9 +35,10 @@ class Ingredient extends BaseModel {
                 'foodstuff_id' => $row['foodstuff_id'],
                 'nick' => $row['nick'],
             ));
+            return $ingredient;
         }
 
-        return $ingredient;
+        return null;
     }
 
 }

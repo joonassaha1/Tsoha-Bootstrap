@@ -13,6 +13,7 @@ CREATE TABLE Foodstuff(
 );
 
 CREATE TABLE Recipe(
+    id SERIAL PRIMARY KEY,
     chef_id INTEGER REFERENCES Chef(id),
     foodstuff_id INTEGER REFERENCES Foodstuff(id),
     nick varchar(50) NOT NULL,
@@ -22,6 +23,7 @@ CREATE TABLE Recipe(
 );
 
 CREATE TABLE Ingredient(
+    id SERIAL PRIMARY KEY,
     foodstuff_id INTEGER REFERENCES Foodstuff(id),
     nick varchar(50) NOT NULL
 );

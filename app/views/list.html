@@ -19,13 +19,11 @@
     </thead>
 
     <tbody>
-        {% for item in items %}
-        <!-- Listataan pelit tähän -->
+        {% for recipe in recipes %}
         <tr>
-            <td><a href="{{base_path}}/{{foodstuff.id}}">{{foodstuff.name}}</a></td>
-            <td>{{foodstuff.published}}</td>
+            <td><a href="{{base_path}}/">{{recipe.name}}</a></td>
             <td><label class="label label-danger">ei hyvää</label></td>
-            <th><a class="btn btn-default btn-sm" href="{{base_path}}/item/{{foodstuff.id}}/edit">Muokkaa</a></th>
+            <th><a class="btn btn-default btn-sm" href="{{base_path}}">Muokkaa</a></th>
         </tr>
         {% endfor %}
     </tbody>
