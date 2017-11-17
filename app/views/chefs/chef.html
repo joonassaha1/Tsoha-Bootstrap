@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Makaronilaatikko</h1>
+<!-- Tiedot tulee listana tähän -->
+<ul>
+    <li><strong>Viimeisin muokkauspäivä:</strong> 10.11.2017</li>
+    <li><strong>Lisääjä:</strong> Bethesda Softworks</li>
+    <li><strong>Status:</strong> <label class="label label-danger">ei hyvää</label></li>
+    <li><strong>Lisäyspäivä:</strong> 9.11.2017</li>
+</ul>
+<!-- Kuvaus tulee tähän -->
+<p>
+    Makaronilaatikko on suomalainen perinneruoka johon tulee makaroni ja laatikko.
+</p>
+<h2>Ainesosat</h2>
+<ul>
+    <li>Makaroni - 1 kpl</li>
+    <li>Laatikko - 1 kpl</li>
+</ul>
+<!-- Painikkeet tähän -->
+<p>
+    <button class="btn btn-danger">Poista</button> <a href="#" class="btn btn-default">Muokkaa</a>
+</p>
+{% endblock %}

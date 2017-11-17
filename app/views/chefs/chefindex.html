@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Kokit</h1>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Kokin nimi</th>
+            <th>Kokin id</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for chef in chefs %}
+        <tr>
+            <td><a href="#">{{chef.name}}</a></td>
+            <td></td>
+            <td><label class="label label-danger">ei hyvää</label></td>
+            <th><a class="btn btn-default btn-sm" href="{{base_path}}/item/{{foodstuff.id}}/edit">Muokkaa</a></th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -4,6 +4,10 @@ $routes->get('/', function() {
     HelloWorldController::index();
 });
 
+$routes->get('/chefs/chefindex', function() {
+    ChefController::index();
+});
+
 $routes->get('/hiekkalaatikko', function() {
     HelloWorldController::sandbox();
 });
@@ -13,7 +17,8 @@ $routes->get('/list', function() {
 });
 
 $routes->get('/item', function() {
-    HelloWorldController::itemi();
+    #HelloWorldController::itemi();
+    FoodstuffController::itemi();
 });
 
 $routes->get('/edit', function() {

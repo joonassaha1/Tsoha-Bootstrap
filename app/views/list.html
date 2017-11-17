@@ -1,33 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Käyttäjän nn ateriat</h1>
+<h1>Käyttäjän nn ateriat</h1>
 
-  <p>
-    <a href="#" class="btn btn-success">Lisää ateria</a>
-  </p>
+<p>
+    <a href="{{base_path}}/item/new" class="btn btn-success">Lisää ateria</a>
+</p>
 
-  <table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered">
     <thead>
-      <tr>
-        <th>Aterian nimi</th>
-        <th>Viimeisin muokkauspäivä</th>
-        <th>Lisääjä</th>
-        <th>Status</th>
-        <th>Lisäyspäivä</th>
-        <th></th>
-      </tr>
+        <tr>
+            <th>Aterian nimi</th>
+            <th>Viimeisin muokkauspäivä</th>
+            <th>Lisääjä</th>
+            <th>Status</th>
+            <th>Lisäyspäivä</th>
+            <th></th>
+        </tr>
     </thead>
 
     <tbody>
-      <!-- Listataan pelit tähän -->
-      <tr>
-        <td><a href="#">Makaronilaatikko</a></td>
-        <td>10.11.2017</td>
-        <td>nn</td>
-        <td><label class="label label-danger">ei hyvää</label></td>
-        <td>9.11.2017</td>
-        <th><a class="btn btn-default btn-sm" href="#">Muokkaa</a></th>
-      </tr>
+        {% for item in items %}
+        <!-- Listataan pelit tähän -->
+        <tr>
+            <td><a href="{{base_path}}/{{foodstuff.id}}">{{foodstuff.name}}</a></td>
+            <td>{{foodstuff.published}}</td>
+            <td><label class="label label-danger">ei hyvää</label></td>
+            <th><a class="btn btn-default btn-sm" href="{{base_path}}/item/{{foodstuff.id}}/edit">Muokkaa</a></th>
+        </tr>
+        {% endfor %}
     </tbody>
-  </table>
+</table>
 {% endblock %}

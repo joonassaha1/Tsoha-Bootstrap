@@ -11,7 +11,12 @@ class HelloWorldController extends BaseController {
     public static function sandbox() {
         // Testaa koodiasi täällä
         #echo 'Hello World!';
-        View::make('helloworld.html');
+        #View::make('helloworld.html');
+        $ekakokki = Chef::find(1);
+        $chefs = Chef::all();
+        // Kint-luokan dump-metodi tulostaa muuttujan arvon
+        Kint::dump($chefs);
+        Kint::dump($ekakokki);
     }
 
     public static function lista() {
