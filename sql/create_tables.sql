@@ -24,7 +24,7 @@ CREATE TABLE Recipe(
 
 CREATE TABLE Ingredient(
     id SERIAL PRIMARY KEY,
-    foodstuff_id INTEGER REFERENCES Foodstuff(id),
+    /*foodstuff_id INTEGER REFERENCES Foodstuff(id),*/
     nick varchar(50) NOT NULL
 );
 

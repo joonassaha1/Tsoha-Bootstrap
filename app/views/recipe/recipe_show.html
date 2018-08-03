@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if message %}
+<div class="alert alert-success">
+    {{message}}
+</div>
+{% endif %}
+
+<h1>{{recipe.nick}}</h1>
+<p>
+    {{recipe.description}}
+</p>
+<!-- Painikkeet tähän -->
+<p>
+    <button class="btn btn-danger">Poista</button> <a href="#" class="btn btn-default">Muokkaa</a>
+</p>
+<!-- Tiedot tulee listana tähän -->
+<ul>
+    <li>lista</li>
+</ul>
+
+</body>
+</html>
+{% endblock %}

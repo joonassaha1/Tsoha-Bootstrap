@@ -3,7 +3,7 @@
   <h1>Reseptit</h1>
 
   <p>
-    <a href="{{base_path}}/recipes/new" class="btn btn-success">Lisää resepti</a>
+    <a href="{{base_path}}/recipe/new" class="btn btn-success">Lisää resepti</a>
   </p>
 
   <table class="table table-striped table-bordered">
@@ -20,7 +20,7 @@
     <tbody>
       {% for recipe in recipes %}
         <tr>
-          <td>{{recipe.nick}}</td>
+          <td><a href="{{base_path}}/recipe/{{recipe.id}}">{{recipe.nick}}</td>
           <td>{{recipe.description}}</td>
           <td>{{recipe.id}}</td>
           <td>{{recipe.status}}</td>

@@ -5,24 +5,24 @@ $routes->get('/', function() {
 });
 
 $routes->get('/list', function() {
-    #HelloWorldController::lista();
     RecipeController::index();
+});
+
+$routes->post('/recipe', function() {
+    RecipeController::store();
+});
+
+$routes->get('/recipe/new', function() {
+    RecipeController::create();
+});
+
+//uusi metodi
+$routes->get('/recipe/:id', function($id){
+    RecipeController::show($id);
 });
 
 $routes->get('/chefs/chefindex', function() {
     ChefController::index();
-});
-
-$routes->post('/recipes', function() {
-    RecipeController::store();
-});
-
-$routes->get('/recipes/new', function() {
-    RecipeController::create();
-});
-
-$routes->get('/recipes/:id', function($id){
-  GameController::show($id);
 });
 
 $routes->get('/chefs/:id', function() {

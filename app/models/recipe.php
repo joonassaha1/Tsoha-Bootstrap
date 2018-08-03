@@ -17,8 +17,8 @@ class Recipe extends BaseModel {
         foreach ($rows as $row) {
             $recipes[] = new Recipe(array(
                 'id' => $row['id'],
-                'chef_id' => $row['chef_id'],
-                'foodstuff_id' => $row['foodstuff_id'],
+                //'chef_id' => $row['chef_id'],
+                //'foodstuff_id' => $row['foodstuff_id'],
                 'nick' => $row['nick'],
                 'description' => $row['description'],
                 'status' => $row['status'],
@@ -52,10 +52,10 @@ class Recipe extends BaseModel {
     }
 
     public function save() {
-        $query = DB::connection()->prepare('INSERT INTO Recipe (nick, description, published) VALUES (:nick, :description, :published) RETURNING chef_id');
+        $query = DB::connection()->prepare('INSERT INTO Recipe (nick, description, published) VALUES (:nick, :description, :published) RETURNING id');
         $query->execute(array('nick' => $this->nick, 'published' => $this->published, 'description' => $this->description));
         $row = $query->fetch();
-        $this->chef_id = $row['chef_id'];
+        $this->id = $row['id'];
     }
 
     public static function findByChef($chef_id) {
